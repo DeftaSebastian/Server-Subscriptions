@@ -19,7 +19,8 @@ singurele mesaje date de acestea pot fi: conectare, deconectare, subscribe, unsu
 Am inceput prin a verifica daca un client se conecteaza, pentru a verifica daca un
 client nou a fost adaugat am folosit functia connect_client care compara id-ul noului 
 client cu id-ul celorlati deja conectati sau fosti conectati. Daca un client este
-nou adaugat setez o variabila globala (added_client) pe 1 pentru a stiide output sa dau. Tot in aceasta verificare am adaugat functia search_in_pending care cauta mesajele 
+nou adaugat setez o variabila globala (added_client) pe 1 pentru a stiide output sa dau. 
+Tot in aceasta verificare am adaugat functia search_in_pending care cauta mesajele 
 netrimise catre acest client nou conectat, iar daca gaseste astfel de mesaje le trimite.
 Pentru a rezolva problema in care trimit mesaje mai mari decat structura folosita, am
 setat buffer-ul la marimea structurii tcp_msg, astfel o sa trimit mesaje de marimea 
@@ -48,4 +49,4 @@ programul acestui client, iar daca nu este un astfel de mesaj inseamna ca am pri
 un mesaj de tip tcp_msg pe care il pun din buffer intr-o structura de tip tcp_msg si o
 printez.
 
-Defta Mihai-Sebastian 322CD
+Defta Mihai-Sebastian 
